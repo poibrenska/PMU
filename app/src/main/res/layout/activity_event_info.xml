@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@color/bg_events"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:background="@color/btn_back_bg"
+            android:text="@string/btn_back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtMyEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:layout_weight="0.60"
+            android:text="@string/event_info_lbl"
+            android:textColor="@color/lbl_welcome"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"/>
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:textColor="@color/lbl_name"
+            android:textSize="22dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtCode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/btnSearch"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="26dp"-->
+<!--            android:textColor="@color/lbl_name"-->
+<!--            android:textSize="22dp" />-->
+
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/event_name_info"
+            android:textColor="@color/lbl_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive" />
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/lbl_name"
+            android:textSize="20sp"
+            android:layout_weight="0.06" />
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/event_address_info"
+            android:textColor="@color/lbl_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/lbl_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblDescription"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/event_description_info"
+            android:textColor="@color/lbl_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"  />
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:maxLines = "5"
+            android:scrollbars = "vertical"
+            android:layout_marginTop="1dp"
+            android:textColor="@color/lbl_name"
+            android:textSize="20sp"
+            android:layout_weight="0.11" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/lblGifts"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:text="@string/wanted_gifts"
+            android:textColor="@color/lbl_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"  />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:id="@+id/scrollGiftButtons"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"></ScrollView>
+    </LinearLayout>
+</RelativeLayout>

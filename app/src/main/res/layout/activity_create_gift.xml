@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@color/bg_events"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/linearLayout2"
+            android:background="@color/btn_back_bg"
+            android:text="@string/btn_back"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtCreateGift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:layout_weight="0.60"
+            android:text="@string/gift_lbl"
+            android:textColor="@color/lbl_welcome"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive" />
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="@string/gift_name"
+            android:textColor="@color/lbl_name"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive" />
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_label"
+            android:hint="Name"
+            android:inputType="text"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint" />
+
+        <TextView
+            android:id="@+id/lblDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearch"
+            android:layout_marginTop="26dp"
+            android:text="@string/gift_description"
+            android:gravity="left"
+            android:textColor="@color/lbl_name"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive" />
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="300px"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_label"
+            android:hint="Description"
+            android:inputType="text"
+            android:padding="10dp"
+            android:maxLength="250"
+            android:gravity="top"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_weight="0.96" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mLlayoutBottomButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_save"
+            android:background="@color/btn_back_bg"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

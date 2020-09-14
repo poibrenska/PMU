@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pmu.gift_app"
+    android:versionCode="1"
+    android:versionName="1.0"
+    tools:ignore="GradleOverrides">
+
+    <uses-sdk android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.pmu.gift_app.app.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Gift App"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="Login Page"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="Registration Page"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="Main Activity Page"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CreateEventActivity"
+            android:label="Create Event Page"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MyEventInfoActivity"
+            android:label="My Event Info Page"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EventInfoActivity"
+            android:label="Event Info Page"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CreateGiftActivity"
+            android:label="Create Gift Page"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".activity.GiftInfoActivity"
+            android:label="Gift Info Page"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MyGiftInfoActivity"
+            android:label="My Gift Info Page"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>

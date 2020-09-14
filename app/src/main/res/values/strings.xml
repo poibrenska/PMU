@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gift App</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN >></string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_search">SEARCH EVENT</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome to the Gifts App</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete</string>
+    <string name="name">Fullname</string>
+    <string name="event_lbl">Create your event</string>
+    <string name="create_event">CREATE EVENT</string>
+    <string name="my_event">My Event</string>
+    <string name="my_events">My Events</string>
+    <string name="event_info_lbl">Event</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_name_info">Name:</string>
+    <string name="event_address">Address</string>
+    <string name="event_address_info">Address:</string>
+    <string name="event_description">Description</string>
+    <string name="event_description_info">Description:</string>
+    <string name="my_gift">My Gift</string>
+    <string name="gift_lbl">Add Gift</string>
+    <string name="gift_name">Gift Name</string>
+    <string name="gift_description">Description</string>
+    <string name="gift_lbl_info">Gift:</string>
+    <string name="gift_name_info">Name:</string>
+    <string name="gift_description_info">Description:</string>
+    <string name="wanted_gifts">Wanted Gifts:</string>
+    <string name="gift_take">Book the gift</string>
+    <string name="gift_untake">Return the gift</string>
+    <string name="booked_gift">This gift is already booked!</string>
+    <string name="booked_gift_info">This gift is booked!</string>
+
+</resources>
